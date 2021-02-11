@@ -224,16 +224,17 @@ h1 {
   align-items: center;
   justify-content: center;
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  z-index: 2;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 528px;
   height: 581px;
   background-color: var(--white-color);
@@ -241,6 +242,7 @@ h1 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: fixed;
+  z-index: 3;
 }
 .modal-btn {
   display: flex;
@@ -249,12 +251,108 @@ h1 {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0.1);
-  margin-top: 8px;
-  margin-right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 15px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
+
+.modal h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  resize: none;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+textarea {
+  margin-bottom: 20px;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 0;
+}
+textarea::placeholder {
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+label {
+  font-size: 12px;
+  color: var(--light-text-color);
+}
+label:not(:last-child) {
+  margin-bottom: 4px;
+}
+.input {
+  padding: 0;
+  height: 40px;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-width: 1px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--light-text-color);
+}
+
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-color: var(--text-color);
+  cursor: pointer;
+}
+
+.terms {
+  display: block;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+form > button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 124px;
+  padding: 0;
+  cursor: pointer;
+}
+.svg-close {
+  height: 14px;
+}
+
 .svg-close:hover,
 .svg-close:focus {
   height: 14px;
