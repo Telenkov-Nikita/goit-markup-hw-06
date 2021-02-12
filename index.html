@@ -38,7 +38,7 @@
 <section class="firstBlock">
     <div class="container">
         <h1>Эффективные решения<br> для вашего бизнеса</h1>
-        <button class="btn" data-modal-open>Заказать услугу</button>
+        <button type="button" class="btn" data-modal-open>Заказать услугу</button>
 
     </div>
 </section>
@@ -252,22 +252,56 @@
                 </ul>
             </div>
         </div>
+        <form class="footer-form">
+            <p>Подпишитесь на рассылку</p>
+            <div class="footer-form-box">
+                <input name="E-mail" type="mail" class="footer-mail" placeholder="E-mail">
+            <button type="submit">Подписаться
+                <svg class="send">
+                <use href="./sprite.svg#send"></use>
+                </svg> 
+            </button>
+            </div>
+        </form>
         </div>
     </footer>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <form action="#" class="form" autocomplete="on">
-                            <h3>Оствьте свои данные, мы вам перезвоним</h3>
-                            <label for="user-name">Имя</label>
-                            <input id="user-name" name="name" type="text" class="input">
-                            <label for="user-tel">Телефон</label>
-                            <input id="user-tel" name="tel" type="number" class="input">
-                            <label for="user-mail">Почта</label>
-                            <input id="user-mail" name="mail" type="mail" class="input">
-                            <label for="comment">Комментарий</label>
-                            <textarea id="comment" name="comment" class="comment" rows="5" placeholder="Введите текст"></textarea>
+                            <p>Оствьте свои данные, мы вам перезвоним</p>
+                            <label for="user-name">Имя
+                                <span class="input-span">
+                                <input id="user-name" name="name" type="text" class="input-item">
+                                <svg class="svg-form">
+                                    <use href="./sprite.svg#icon-person"></use>
+                                </svg>
+                                </span>
+                            </label>
+                            
+                            <label for="user-tel">Телефон
+                                <span class="input-span">
+                                <input id="user-tel" name="tel" type="number" class="input-item">
+                                <svg class="svg-form">
+                                    <use href="./sprite.svg#icon-call-phone"></use>
+                                </svg>
+                                </span>
+                            </label>
+
+                            <label for="user-mail">Почта
+                                <span class="input-span">
+                                <input id="user-mail" name="mail" type="mail" class="input-item">
+                                <svg class="svg-form">
+                                    <use href="./sprite.svg#icon-message"></use>
+                                </svg>
+                                </span>
+                            </label>
+
+                            <label for="comment">Комментарий
+                                <textarea id="comment" name="comment" class="comment" rows="5" placeholder="Введите текст"></textarea>
+                            </label>
+                            
                             <div class="checkbox">
-                            <input id="checkbox" type="checkbox" name="agreement" value="agree" />
+                            <input id="checkbox" type="checkbox" name="agreement" value="agree"  class="visually-hidden"/>
                             <label for="checkbox" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="terms"> Условия договора</a></label>
                             </div>
                            <button type="submit">Отправить</button>
