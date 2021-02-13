@@ -283,7 +283,7 @@ form {
 
 textarea {
   margin-top: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
   height: 120px;
   font-size: 14px;
@@ -308,12 +308,12 @@ textarea:focus {
 }
 
 label {
+  margin-bottom: 10px;
   font-size: 12px;
   color: var(--light-text-color);
 }
 
 .input-item {
-  margin-top: 4px;
   display: block;
   padding: 0 0 0 42px;
   height: 40px;
@@ -321,7 +321,6 @@ label {
   border-color: rgba(33, 33, 33, 0.2);
   border-width: 1px;
   border-radius: 4px;
-  margin-bottom: 10px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -335,6 +334,7 @@ label {
 }
 
 .input-span {
+  margin-top: 4px;
   display: block;
   position: relative;
 }
@@ -354,15 +354,16 @@ label {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: var(--light-text-color);
 }
 
 .checkbox-label {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
+  font-size: 14px;
 }
 
 #checkbox {
@@ -397,8 +398,10 @@ label {
 
 .terms {
   display: block;
+  font-size: 14px;
   color: var(--accent-color);
   text-decoration: underline;
+  margin-left: 4px;
 }
 
 form > button {
@@ -673,8 +676,7 @@ h2 {
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-btn > .list:not(:last-child) {
   margin-right: 9px;
@@ -849,7 +851,7 @@ address a {
 }
 
 .footer-form {
-  padding-left: 93px;
+  margin-left: 93px;
 }
 
 .footer-form p {
